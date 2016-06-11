@@ -22,7 +22,7 @@ restart: .DEFAULT
 		BOARD=$(notdir $(shell pwd))
 else
 
-BOARD ?= bds
+BOARD ?= bettong
 
 # Directory where the board is configured (includes /$(BOARD) at the end)
 BDIR:=$(wildcard board/$(BOARD) private-*/board/$(BOARD))
